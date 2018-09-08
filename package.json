@@ -1,0 +1,20 @@
+{
+  "name": "cnews",
+  "version": "1.0.1-alpha",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "build-win": "pkg -o cnews ./index.js"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "got": "^9.2.1",
+    "mongodb": "^3.1.4",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "pkg": "^4.3.4"
+  }
+}
