@@ -3,7 +3,7 @@
 Cralwer tiêu đề bài bào trên các web site tin tức Việt Nam
 
 ### Cài đặt
-- Tạo file `.env` chưa thống số MongoDB
+- Tạo file `.env` chứa thống số MongoDB
 ```
 MONGODB=
 DBNAME=
@@ -15,7 +15,7 @@ node index.js [name_news]
 ```
 Ví dụ
 ```
-node index.js nlp # Báo Người lao động
+node index.js nld # Báo Người lao động
 ```
 
 ### Stack
