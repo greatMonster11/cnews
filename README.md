@@ -29,7 +29,7 @@ node index.js nld # Báo Người lao động
  1. Website News có RSS
 - [x] Người lao động (https://nld.com.vn)
 - [x] Vietnamnet (http://vietnamnet.vn)
-- [ ] http://nhandan.com.vn
+- [x] http://nhandan.com.vn
 - [ ] http://www.doisongphapluat.com
 - [ ] http://thanhnien.vn
 - [ ] https://www.tienphong.vn
