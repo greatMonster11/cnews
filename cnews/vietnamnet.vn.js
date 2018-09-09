@@ -1,7 +1,9 @@
-const { db, getDataNews } = require('../utils')
+const { upDb } = require('../utils')
 
-const nameNews = 'Vietnamnet'
-const urlNews = 'vietnamnet.vn'
+const config = {
+  nameNews: 'Vietnamnet',
+  urlNews: 'vietnamnet.vn'
+}
 
 const urlrss = [
   {
@@ -74,42 +76,8 @@ const urlrss = [
   }
 ]
 
-const vnnData = async () => await getDataNews(nameNews, urlrss)
-
 const vnn = async () => {
-  const initdb = await db()
-  const dataVnn = await vnnData()
-  for (let item of dataVnn.data) {
-    initdb
-      .collection('datacnews')
-      .updateOne(
-        { link: item.link },
-        {
-          $set: {
-            ...item,
-            urlNews: urlNews,
-            nameNews: nameNews
-          },
-          $inc: { count: 1 }
-        },
-        { upsert: true }
-      )
-      .then(() => {})
-      .catch(error => console.log(error))
-  }
-  // log
-  initdb
-    .collection('logcnews')
-    .insertOne({
-      urlNews: urlNews,
-      nameNews: nameNews,
-      timeStart: dataVnn.timeStart,
-      timeEnd: +new Date(),
-      successRate: dataVnn.successRate
-    })
-    .then(() => {})
-    .catch(error => console.log(error))
-
-  return '-> success'
+  return await upDb(config, urlrss)
 }
+
 module.exports = vnn
