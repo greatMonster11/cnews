@@ -1,4 +1,4 @@
-const { nld, vnn } = require('./cnews')
+const { nld, vnn, nd } = require('./cnews')
 const { db } = require('./utils')
 
 const main = async () => {
@@ -14,6 +14,12 @@ const main = async () => {
         const dataVnn = await vnn()
         console.log(dataVnn)
         break
+
+      case 'nd':
+        const dataNd = await nd()
+        console.log(dataNd)
+        break
+        
       default:
         console.log('no url news')
     }

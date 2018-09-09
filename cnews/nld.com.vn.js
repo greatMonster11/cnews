@@ -1,7 +1,9 @@
-const { db, getDataNews } = require('../utils')
+const { upDb } = require('../utils')
 
-const nameNews = 'Người lao động'
-const urlNews = 'nld.com.vn'
+const config = {
+  nameNews: 'Người lao động',
+  urlNews: 'nld.com.vn'
+}
 
 const urlrss = [
   {
@@ -70,46 +72,8 @@ const urlrss = [
   }
 ]
 
-const nldData = async () => {
-  const data = await getDataNews(nameNews, urlrss)
-  return data
-}
-
 const nld = async () => {
-  const initdb = await db()
-  const dataNld = await nldData()
-
-  for (let item of dataNld.data) {
-    initdb
-      .collection('datacnews')
-      .updateOne(
-        { link: item.link },
-        {
-          $set: {
-            ...item,
-            urlNews: urlNews,
-            nameNews: nameNews
-          },
-          $inc: { count: 1 }
-        },
-        { upsert: true }
-      )
-      .then(() => {})
-      .catch(error => console.log(error))
-  }
-  // log
-  initdb
-    .collection('logcnews')
-    .insertOne({
-      urlNews: urlNews,
-      nameNews: nameNews,
-      timeStart: dataNld.timeStart,
-      timeEnd: +new Date(),
-      successRate: dataNld.successRate
-    })
-    .then(() => {})
-    .catch(error => console.log(error))
-
-  return '-> success'
+  return await upDb(config, urlrss)
 }
+
 module.exports = nld
