@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --detectOpenHandles",
-    "build-win": "pkg -o cnews ./index.js"
+    "build-win": "pkg -o cnews ./index.js",
+    "build-alpine": "pkg -t node8-alpine-x64 -o app ./index.js"
   },
   "dependencies": {
     "dotenv": "^6.0.0",

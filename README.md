@@ -26,7 +26,6 @@ node index.js nld # Báo Người lao động
  Comming soon...
 
  ### Hỗ trợ site
- 1. Website News có RSS
 - [x] Người lao động (https://nld.com.vn)
 - [x] Vietnamnet (http://vietnamnet.vn)
 - [ ] http://nhandan.com.vn
