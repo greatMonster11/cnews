@@ -1,0 +1,13 @@
+http://afamily.vn/trang-chu.rss
+http://afamily.vn/dep.rss
+http://afamily.vn/doi-song.rss
+http://afamily.vn/cong-so.rss
+http://afamily.vn/an-ngon.rss
+http://afamily.vn/tinh-yeu-hon-nhan.rss
+http://afamily.vn/suc-khoe.rss
+http://afamily.vn/tam-su.rss
+http://afamily.vn/me-va-be.rss
+http://afamily.vn/nha-hay.rss
+http://afamily.vn/hau-truong.rss
+http://afamily.vn/giai-tri.rss
+http://afamily.vn/chuyen-la.rss

@@ -1,0 +1,16 @@
+http://thethaovanhoa.vn/rss.rss
+https://thethaovanhoa.vn/trang-chu.rss
+https://thethaovanhoa.vn/bong-da-viet.rss
+https://thethaovanhoa.vn/anh.rss
+https://thethaovanhoa.vn/tay-ban-nha.rss
+https://thethaovanhoa.vn/duc.rss
+https://thethaovanhoa.vn/italy.rss
+https://thethaovanhoa.vn/champions-league.rss
+https://thethaovanhoa.vn/the-thao.rss
+https://thethaovanhoa.vn/the-gioi-sao.rss
+https://thethaovanhoa.vn/van-hoa-giai-tri.rss
+https://thethaovanhoa.vn/dien-dan-van-hoa.rss
+https://thethaovanhoa.vn/xa-hoi.rss
+https://thethaovanhoa.vn/the-gioi.rss
+https://thethaovanhoa.vn/nu-cuoi.rss
+https://thethaovanhoa.vn/world-cup-2018.rss

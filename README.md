@@ -32,22 +32,18 @@ node index.js nld # Báo Người lao động
 - [ ] http://www.doisongphapluat.com
 - [ ] http://thanhnien.vn
 - [ ] https://www.tienphong.vn
-- [ ] https://tuoitre.vn
 - [ ] http://afamily.vn/
 - [ ] http://giaoducthoidai.vn
-- [ ] http://www.qdnd.vn
 - [ ] http://baophapluat.vn
 - [ ] http://plo.vn
 - [ ] https://thethaovanhoa.vn
-- [ ] https://www.vietnamplus.vn
-- [ ] http://baochinhphu.vn
-- [ ] http://vtv.vn
 - [ ] https://vov.vn
 - [ ] https://vtc.vn
 - [ ] http://vneconomy.vn
 - [ ] https://vnexpress.net
+
+
 - [ ] http://www.vnmedia.vn
-- [ ] http://www.24h.com.vn
 - [ ] http://danviet.vn
 - [ ] https://saostar.vn
 - [ ] https://news.zing.vn
@@ -56,6 +52,12 @@ node index.js nld # Báo Người lao động
 - [ ] http://soha.vn
 - [ ] http://www.dantri.com.vn
 - [ ] http://cafef.vn
+
+2. Not RSS Page
+- [ ] https://www.vietnamplus.vn
+- [ ] http://baochinhphu.vn
+- [ ] http://vtv.vn
+- [ ] http://www.24h.com.vn
 
 
 ### License
